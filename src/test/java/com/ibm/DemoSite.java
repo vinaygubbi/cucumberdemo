@@ -1,19 +1,15 @@
 package com.ibm;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
-import cucumber.api.java.en.Then;
+import cucumber.api.DataTable;
 import cucumber.api.java.en.When;
 
 public class DemoSite {
 	public static WebDriver driver = null;
 	
 
-	@When("^Client will launch the demo site$")
+	/*@When("^Client will launch the demo site$")
 	public void client_will_launch_the_demo_site() throws Throwable {
 		
 			System.setProperty("webdriver.firefox.marionette","\\driver\\geckodriver.exe");
@@ -75,5 +71,22 @@ public class DemoSite {
 					driver.quit();
 					System.out.println("firefox is closed.");
 
+	}*/
+	
+	@When("^Client will launch the demo site$")
+	public void client_will_launch_the_demo_site() throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new PendingException();
+	}
+
+	@When("^user enters the following data$")
+	public void user_enters_the_following_data(DataTable arg1) throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    // For automatic transformation, change DataTable to one of
+	    // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
+	    // E,K,V must be a scalar (String, Integer, Date, enum etc)
+	    //throw new PendingException();
+		System.out.println(arg1.raw());
+		
 	}
 }

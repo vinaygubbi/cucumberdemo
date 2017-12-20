@@ -1,0 +1,54 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "client will launch the demo site and enter user ID, passward and perform validation",
+        "description": "",
+        "id": "demo-of-thedemosite;client-will-launch-the-demo-site-and-enter-user-id--passward-and-perform-validation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 98196717,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Client will launch the demo site",
+            "match": {
+              "location": "DemoSite.client_will_launch_the_demo_site()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3163862,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user enters the following data",
+            "match": {
+              "location": "DemoSite.user_enters_the_following_data(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Nagesh",
+                  "password"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Demo of thedemosite",
+    "description": "",
+    "id": "demo-of-thedemosite",
+    "keyword": "Feature",
+    "uri": "C:/Users/IBM_ADMIN/git/cucumberdemo/Feature/Demo.feature"
+  }
+]

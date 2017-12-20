@@ -1,0 +1,5 @@
+Feature: Demo of thedemosite
+
+  Scenario: client will launch the demo site and enter user ID, passward and perform validation [90m# C:/Users/IBM_ADMIN/git/cucumberdemo/Feature/Demo.feature:2[0m
+    [32mWhen [0m[32mClient will launch the demo site[0m                                                       [90m# DemoSite.client_will_launch_the_demo_site()[0m
+    [32mAnd [0m[32muser enters the following data[0m                                                          [90m# DemoSite.user_enters_the_following_data(DataTable)[0m
